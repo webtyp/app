@@ -53,6 +53,7 @@ Módulo importa contratos (`model`, `router`, `view`, `events`, `orm`/`storage`/
 - App integra al final, una pasada.
 - `AGENTS.md` canónico por módulo (2026-07-17).
 - `clinical_encounterOld` no se toca.
+- `ddl.CreateTable` dentro de `New()` (patrón original de esta ola) se revirtió en `DDL_MIGRATE_ISOLATION_MASTER_PLAN.md` — cada módulo gana `Migrate()` separado en su propio subpaquete `migrate/`; `New()` asume el esquema. Motivo: fuga de `webtyp.com/ddl` al binario wasm vía el import de la vista + ejecución de DDL sin control contra producción (ver ese plan para el detalle).
 
 ## 4. Grafo
 
