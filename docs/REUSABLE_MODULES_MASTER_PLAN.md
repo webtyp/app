@@ -3,7 +3,7 @@
 Hub multi-repo. Cierra el acoplamiento que impedía reutilizar y testear un módulo de dominio: dependían de implementaciones concretas (`mcp`, `json`, `unixid`) y no declaraban su vista. Detalle normativo (whitelist, stdlib, no-map/no-reflect, `storage/mem`): [`veltylabs/modules/AGENTS.md`](https://github.com/veltylabs/modules/blob/main/AGENTS.md) (canónico). Aquí solo estado, orden y decisiones cerradas.
 
 > Dispatch: 2026-07-15 · Última consolidación: **2026-08-27** (ola F–I en curso, ver §5). Anterior: 2026-08-26
-> Doctrina: [`CONSTRUCTION_HARNESS.md`](CONSTRUCTION_HARNESS.md)
+> Doctrina: [`api-design` skill](https://github.com/webtyp/devskills/blob/main/skills/api-design/SKILL.md)
 
 ---
 

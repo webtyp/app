@@ -2,7 +2,7 @@
 
 > Documento para **revisión** antes de implementar. Multi-repo (`tinywasm/form`,
 > `tinywasm/view`, `tinywasm/layout`), por eso vive aquí y no en un solo
-> `docs/PLAN.md`. Sigue `CONSTRUCTION_HARNESS.md`: la corrección vive en el tipo
+> `docs/PLAN.md`. Sigue la [skill `api-design`](https://github.com/webtyp/devskills/blob/main/skills/api-design/SKILL.md): la corrección vive en el tipo
 > y en el contrato (conformance), no en un manual ni en glue por módulo.
 
 ## 1. El fallo observado
@@ -58,7 +58,7 @@ La pregunta de arquitectura es **dónde** poner "¿cambió?". Tres caminos:
     el comportamiento en un **contrato cross-renderer** verificado por test, no
     en una convención que hay que recordar.
 
-### Por qué C es la que respeta el CONSTRUCTION_HARNESS
+### Por qué C es la que respeta la skill `api-design`
 
 - **Corrección en la capa correcta.** El harness manda arreglar el hueco de API
   *upstream*, no parchear en la hoja. "¿Cambió el formulario?" es del

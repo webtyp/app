@@ -6,7 +6,7 @@ valor + conformance + mock) a un puerto nuevo, `tinywasm/storage`, y tanto `orm`
 (runtime DDL) pasan a ser consumidores de ese puerto, no dueños de él.
 
 > Estado: 🟡 **`storage` planificado, sin implementar. Resto de piezas: planes corregidos, sin despachar.**
-> Doctrina: [`CONSTRUCTION_HARNESS.md`](CONSTRUCTION_HARNESS.md).
+> Doctrina: [`api-design` skill](https://github.com/webtyp/devskills/blob/main/skills/api-design/SKILL.md).
 > Razonamiento completo (por qué este diseño, alternativas descartadas, precedente
 > `database/sql`/`database/sql/driver`): [`DB_PORT_PROPOSAL.md`](DB_PORT_PROPOSAL.md) — léelo antes de
 > tocar cualquier repo de esta lista si algo aquí no cuadra; este documento es el rastreador, aquel es

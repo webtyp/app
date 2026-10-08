@@ -2,7 +2,7 @@
 
 > Orchestrator. Each affected library has its own self-contained `docs/PLAN.md`.
 > Dispatch doctrine: consumers wait for their providers; the app is always last.
-> Alignment source: [CONSTRUCTION_HARNESS.md](https://github.com/tinywasm/app-releases/blob/main/docs/CONSTRUCTION_HARNESS.md).
+> Alignment source: [`api-design` skill](https://github.com/webtyp/devskills/blob/main/skills/api-design/SKILL.md).
 > This wave is the follow-up to `app-releases/docs/CRUD_HARNESS_MASTER_PLAN.md`
 > (which fixed `form.New`'s silent empty-form hole — that loud error is what
 > surfaced everything below).

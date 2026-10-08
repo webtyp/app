@@ -6,7 +6,7 @@ las posea**. Una decisión que nadie posee acaba escrita en varios sitios, y nad
 que diverjan.
 
 > **Estado: 🚧 quedan 5 publicaciones.** Última revisión: 2026-08-04.
-> Principios: [CONSTRUCTION_HARNESS.md](CONSTRUCTION_HARNESS.md) (1, 4, 5, 6, 9).
+> Principios: [`api-design` skill](https://github.com/webtyp/devskills/blob/main/skills/api-design/SKILL.md) (1, 4, 5, 6, 9).
 
 | Repo | Último tag | Estado |
 |---|---|---|

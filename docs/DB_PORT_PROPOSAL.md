@@ -2,7 +2,7 @@
 
 > Estado: 🟠 **propuesta / RFC — requiere tu OK antes de implementar.** Fecha: 2026-07-16.
 > Refina (no contradice) el [`DDL_DML_SPLIT_MASTER_PLAN.md`](DDL_DML_SPLIT_MASTER_PLAN.md).
-> Doctrina obligatoria: [`CONSTRUCTION_HARNESS.md`](CONSTRUCTION_HARNESS.md).
+> Doctrina obligatoria: [`api-design` skill](https://github.com/webtyp/devskills/blob/main/skills/api-design/SKILL.md).
 
 ---
 
@@ -67,7 +67,7 @@ Que la respuesta a **"¿de qué depende un driver de base de datos?"** sea:
 
 Y que un autor de backend, sin contexto, abra `tinywasm/storage`, vea **solo** lo que debe implementar más
 "corre el conformance para probarlo", y termine guiado por autocompletado. Ese es el **acid test** del
-harness (§199 de CONSTRUCTION_HARNESS).
+harness (la skill `api-design`).
 
 ---
 
@@ -205,7 +205,7 @@ Propuesta: `storage/conformance` construye valores `storage.Query{...}` directam
 ¿Y quién prueba que `.Where("id").Eq("w1").ReadOne()` produce la `Query` correcta? **`orm`, en sus
 propios tests**, con los recorders de `storage/mock` que capturan la `Query`. Y el end-to-end
 "builder + backend real" se prueba en `orm` corriendo la API fluida contra `storage/mem`. Cada librería
-tiene su test *consumer-shaped* (la regla que mantiene el harness honesto, §127 de CONSTRUCTION_HARNESS).
+tiene su test *consumer-shaped* (la regla que mantiene el harness honesto, la skill `api-design`).
 
 ### 6.5. Por qué introducir `storage.Conn` y que `orm.New` tome **un** argumento
 
@@ -272,7 +272,7 @@ backend?**
   backends construyen **exactamente la misma** `storage.Query{Action: ActionCreate, Columns, Values}` a
   partir del mismo `model`. No cambia ni una línea según el dialecto.
 
-El harness (§88 de CONSTRUCTION_HARNESS) es tajante: *"The glue is written once, in the library that
+El harness (la skill `api-design`) es tajante: *"The glue is written once, in the library that
 owns it. If every application would write the same wiring, that wiring belongs to a piece."* El builder
 es glue **invariante** → se escribe **una vez, encima del contrato**, jamás como obligación del
 contrato.
@@ -402,7 +402,7 @@ d := orm.New(mem.New())                  // misma API, backend en memoria
 
 ---
 
-## 9. Verificación harness (checklist de §144 CONSTRUCTION_HARNESS)
+## 9. Verificación harness (checklist de la skill `api-design`)
 
 - **Huecos sin tipar:** `orm.New(exec, compiler)` (dos args desparejables) → `orm.New(conn storage.Conn)`
   (uno). ✅

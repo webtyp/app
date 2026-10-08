@@ -5,7 +5,7 @@ síntomas**: un agente ejecutando la fase D de `mjosefa-cms` se quedó bloqueado
 punto el "arreglo evidente" empeoraba el problema.
 
 > Dispatch: 2026-07-13 · **Estado: 🚧 EN CURSO — A, B y C publicadas (`model` v0.0.12, `router` v0.1.9, `mcp` v0.1.21)**
-> Doctrina: `app/docs/CONSTRUCTION_HARNESS.md`.
+> Doctrina: la [skill `api-design`](https://github.com/webtyp/devskills/blob/main/skills/api-design/SKILL.md).
 
 ---
 
