@@ -22,7 +22,7 @@ Modern web development fails under layers — frameworks, bundlers, transpilers,
 
 Built first for **freelancers, agencies and small teams** delivering PWAs and business applications.
 
-**Is it for you?** The problem it solves, who it's for, what works today and its honest limits: **[docs/WHY.md](docs/WHY.md)**.
+**Is it for you?** The problem it solves, who it's for, what works today and its honest limits: **[docs/WHY.md](docs/WHY.md)** · [Español](docs/WHY.es.md).
 
 ---
 
@@ -86,7 +86,7 @@ An agent drives WebTyp through the MCP daemon (`webtyp mcp`); the TUI (`webtyp d
 
 | Document | What's inside |
 |----------|---------------|
-| [docs/WHY.md](docs/WHY.md) | The problem it solves, the four promises, who it's for, what works today and its limits |
+| [docs/WHY.md](docs/WHY.md) · [ES](docs/WHY.es.md) | The vision, the problem it solves, the four promises, why Go, who it's for, what works today, its limits and where it comes from |
 | [`api-design` skill](https://github.com/webtyp/devskills/blob/main/skills/api-design/SKILL.md) | The typed, explicit API approach and why it's an advantage |
 
 ---
