@@ -146,7 +146,7 @@ Reglas de dependencia (una sola dirección, sin ciclos):
 | `orm.DB`, `QB`, `Where/OrderBy/Limit/Offset/ReadOne/ReadAll`, `Create/Update/Delete`, `Tx` | `orm` | La API ergonómica. Audiencia: apps/hojas. No le incumbe a un backend. |
 | `orm.New(conn storage.Conn)` | `orm` | El punto de ensamblaje: envuelve un backend (o `mem`) en el handle ergonómico. |
 | `ErrNotFound` | `orm` | Es el error de `ReadOne` (concepto del builder: "no hubo fila para tu ReadOne"). El backend solo conoce `storage.ErrNoRows`; `ReadOne` lo traduce a `ErrNotFound`. |
-| `CreateTable/DropTable/Sync/SyncSchema`, `ddl.Compiler`, `Op`, `Stmt`, `TableIntrospector`, `ddl/conformance` | `ddl` | Ya decidido en el split DDL/DML. Cambia solo su dependencia: **`storage` en vez de `orm`** (§6.7). |
+| `DropTable/CreateDatabase/Sync/SyncSchema`, `ddl.Compiler`, `Op`, `Stmt`, `TableIntrospector`, `ddl/conformance` | `ddl` | Ya decidido en el split DDL/DML. Cambia solo su dependencia: **`storage` en vez de `orm`** (§6.7). |
 
 ---
 
