@@ -49,6 +49,17 @@ func main() {
 	fade := flag.Float64("fade", 0.6, "crossfade duration in seconds")
 	flag.Parse()
 
+	if _, err := os.Stat(*dir); os.IsNotExist(err) {
+		if _, err2 := os.Stat("../img"); err2 == nil {
+			if *dir == "docs/img" {
+				*dir = "../img"
+			}
+			if *out == "docs/img/slider.svg" {
+				*out = "../img/slider.svg"
+			}
+		}
+	}
+
 	slides, err := load(*dir)
 	if err != nil {
 		log.Fatal(err)
